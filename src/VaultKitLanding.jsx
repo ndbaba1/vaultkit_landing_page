@@ -267,7 +267,7 @@ export default function VaultKitLanding() {
             </DialogDescription>
           </DialogHeader>
           <p className="text-sm">
-            Email: <strong>founders@vaultkit.dev</strong>
+            Email: <strong>founders@vaultkit.io</strong>
           </p>
           <DialogFooter>
             <Button variant="outline" onClick={() => setFounderOpen(false)}>
