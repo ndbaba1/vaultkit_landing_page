@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import ArchitectureDiagram from "./ArchitectureDiagram"
 import TerminalBlock from "./TerminalBlock"
+import VaultKitLogo from "@/components/VaultKitLogo"
 import {
   ShieldCheck,
   EyeOff,
@@ -90,7 +91,11 @@ export default function VaultKitLanding() {
 
       {/* NAV */}
       <header className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <div className="text-xl font-semibold">VaultKit</div>
+        <div className="flex items-center gap-3">
+          <VaultKitLogo size={100} />
+          {/* Optional: keep text for now or remove later */}
+          <div className="text-xl font-semibold">VaultKit</div>
+        </div>
         <nav className="flex items-center gap-6 text-sm">
           <a href="#architecture" className="text-zinc-600 hover:text-zinc-900">
             Architecture

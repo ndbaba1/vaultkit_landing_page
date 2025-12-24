@@ -1,0 +1,40 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  aria-label="VaultKit"
+>
+  <!-- Tight hexagon (less padding) -->
+  <path
+    d="M32 6
+       L52 18
+       V46
+       L32 58
+       L12 46
+       V18
+       Z"
+    fill="#0f172a"
+  />
+
+  <!-- Bolder shield -->
+  <path
+    d="M32 20
+       C27 22 24 22 24 22
+       V31
+       C24 37 29 42 32 44
+       C35 42 40 37 40 31
+       V22
+       C40 22 37 22 32 20
+       Z"
+    fill="#ffffff"
+  />
+
+  <!-- Thicker check -->
+  <path
+    d="M28 31l3 3 6-6"
+    fill="none"
+    stroke="#0f172a"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
