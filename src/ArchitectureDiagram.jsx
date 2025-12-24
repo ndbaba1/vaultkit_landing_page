@@ -51,7 +51,7 @@ export default function ArchitectureDiagram() {
           fontWeight="600"
           fill="#111"
         >
-          CLI
+          Clients (CLI, SDKs, UI)
         </text>
 
         {/* Left connector */}

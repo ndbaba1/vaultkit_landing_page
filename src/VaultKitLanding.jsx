@@ -148,6 +148,58 @@ export default function VaultKitLanding() {
         <Feature icon={<ClipboardList />} title="Audit Everything" desc="Every request is logged and traceable." />
       </section>
 
+      <section className="max-w-6xl mx-auto px-6 pb-28">
+        <h2 className="text-3xl font-semibold text-center mb-10">
+          Who VaultKit is for
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* GOOD FIT */}
+          <div className="border rounded-xl p-6">
+            <h3 className="font-medium mb-4 text-lg">
+              Good fit
+            </h3>
+
+            <ul className="space-y-3 list-disc list-inside text-sm text-zinc-600">
+              <li>
+                Teams exposing <strong>production data</strong> to AI agents
+              </li>
+              <li>
+                Platform, security, or data engineering teams
+              </li>
+              <li>
+                Companies with <strong>compliance, audit, or approval</strong> requirements
+              </li>
+              <li>
+                Organizations standardizing human and AI data access
+              </li>
+            </ul>
+          </div>
+
+          {/* NOT A FIT */}
+          <div className="border rounded-xl p-6 bg-zinc-50">
+            <h3 className="font-medium mb-4 text-lg">
+              Probably not a fit
+            </h3>
+
+            <ul className="space-y-3 list-disc list-inside text-sm text-zinc-600">
+              <li>
+                Personal projects or one-off scripts
+              </li>
+              <li>
+                Teams without production data or access controls
+              </li>
+              <li>
+                Use cases that don’t require approvals or auditability
+              </li>
+              <li>
+                Pure experimentation without governance needs
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ARCHITECTURE */}
       <section id="architecture" className="bg-zinc-50 border-t border-b">
         <div className="max-w-6xl mx-auto px-6 py-28 text-center">
@@ -159,12 +211,35 @@ export default function VaultKitLanding() {
 
           <div className="mt-16">
             <ArchitectureDiagram />
-          </div>
+            <div className="mt-10 grid md:grid-cols-3 gap-6 text-sm text-zinc-600">
+              <div className="text-center">
+                <div className="font-medium text-zinc-900 mb-1">
+                  VaultKit (Control Plane)
+                </div>
+                <p>
+                  Approvals, policy enforcement, identity, and audit logging.
+                </p>
+              </div>
 
-          <p className="mt-10 text-sm text-zinc-500 max-w-xl mx-auto">
-            FUNL is the narrow waist: policies are evaluated once, execution is sandboxed,
-            and credentials never reach clients.
-          </p>
+              <div className="text-center">
+                <div className="font-medium text-zinc-900 mb-1">
+                  FUNL (Data Plane)
+                </div>
+                <p>
+                  Executes approved AQL queries and delivers encrypted results.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="font-medium text-zinc-900 mb-1">
+                  Clients (CLI / Agents)
+                </div>
+                <p>
+                  Engineers, CI jobs, and AI agents requesting governed access.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
