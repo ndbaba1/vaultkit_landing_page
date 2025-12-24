@@ -2,12 +2,10 @@
 
 export default function ArchitectureDiagram() {
   return (
-    <div className="flex justify-center">
+    <div className="w-full overflow-x-hidden flex justify-center">
       <svg
         viewBox="0 0 800 200"
-        width="800"
-        height="200"
-        className="max-w-full"
+        className="w-full max-w-[800px] h-auto"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* VaultKit */}
@@ -32,7 +30,7 @@ export default function ArchitectureDiagram() {
           VaultKit
         </text>
 
-        {/* React Portal */}
+        {/* Clients */}
         <rect
           x="560"
           y="60"
@@ -47,7 +45,7 @@ export default function ArchitectureDiagram() {
           x="660"
           y="98"
           textAnchor="middle"
-          fontSize="18"
+          fontSize="16"
           fontWeight="600"
           fill="#111"
         >

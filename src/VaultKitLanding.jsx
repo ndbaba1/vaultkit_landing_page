@@ -90,17 +90,23 @@ export default function VaultKitLanding() {
     <main className="min-h-screen bg-white text-zinc-900">
 
       {/* NAV */}
-      <header className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <VaultKitLogo size={100} />
-          {/* Optional: keep text for now or remove later */}
-          <div className="text-xl font-semibold">VaultKit</div>
+      <header className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <VaultKitLogo size={28} />
+          <span className="text-base md:text-lg font-semibold">VaultKit</span>
         </div>
-        <nav className="flex items-center gap-6 text-sm">
-          <a href="#architecture" className="text-zinc-600 hover:text-zinc-900">
+
+        <nav className="flex items-center gap-3">
+          <a
+            href="#architecture"
+            className="hidden md:inline text-zinc-600 hover:text-zinc-900"
+          >
             Architecture
           </a>
-          <a href="#features" className="text-zinc-600 hover:text-zinc-900">
+          <a
+            href="#features"
+            className="hidden md:inline text-zinc-600 hover:text-zinc-900"
+          >
             Features
           </a>
           <Button size="sm" onClick={() => setEarlyAccessOpen(true)}>
@@ -110,8 +116,8 @@ export default function VaultKitLanding() {
       </header>
 
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 pt-28 pb-36 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-20 md:pt-28 md:pb-36 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
           Control how humans and AI<br />access production data
         </h1>
 
@@ -216,7 +222,7 @@ export default function VaultKitLanding() {
 
           <div className="mt-16">
             <ArchitectureDiagram />
-            <div className="mt-10 grid md:grid-cols-3 gap-6 text-sm text-zinc-600">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
               <div className="text-center">
                 <div className="font-medium text-zinc-900 mb-1">
                   VaultKit (Control Plane)
